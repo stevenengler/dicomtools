@@ -34,7 +34,7 @@ Reading a single DICOM file:
 Building a 3D Volume Dataset
 ----------------------------
 
-If a :class:`dicomtools.series.DicomSeries` object represents 3D data, you can easily process this using the :class:`dicomtools.volume.DicomVolume`.
+If a :class:`dicomtools.series.DicomSeries` object represents 3D data as a multi-frame dataset or multiple DICOM files within a series, you can easily process this using the :class:`dicomtools.volume.DicomVolume`.
 
 View a single slice of the 3D multi-frame dataset:
 ::

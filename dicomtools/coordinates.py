@@ -7,9 +7,10 @@ def build_image_to_patient_matrix(origin_position, pixel_spacing, row_vec, colum
 	pixel/voxel.
 	
 	The DICOM standard defines the patient coordinate system as:
+	
 		- x -> increasing to the left hand side of the patient
 		- y -> increasing to the posterior side of the patient
-		- z -> increasing toward the head of the patient 
+		- z -> increasing toward the head of the patient
 	
 	source: https://public.kitware.com/IGSTKWIKI/index.php/DICOM_data_orientation
 	'''
@@ -62,6 +63,7 @@ def build_patient_to_physical_matrix(patient_position):
 	yourself.
 	
 	Possible patient positions are:
+	
 		- HFP = head first-prone
 		- HFS = head first-supine
 		- HFDR = head first-decibitus right

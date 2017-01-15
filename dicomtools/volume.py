@@ -177,9 +177,10 @@ class DicomVolume(object):
 		pixel/voxel.
 		
 		The DICOM standard defines the patient coordinate system as:
-			x -> increasing to the left hand side of the patient
-			y -> increasing to the posterior side of the patient
-			z -> increasing toward the head of the patient 
+		
+			- x -> increasing to the left hand side of the patient
+			- y -> increasing to the posterior side of the patient
+			- z -> increasing toward the head of the patient
 	
 		source: https://public.kitware.com/IGSTKWIKI/index.php/DICOM_data_orientation
 		'''

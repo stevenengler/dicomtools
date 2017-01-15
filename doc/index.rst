@@ -15,10 +15,9 @@ vendor-specific attributes.
 Contents:
 
 .. toctree::
-   :maxdepth: 5
    
    examples
-   apidoc/dicomtools
+   reference
 
 Indices and tables
 ==================

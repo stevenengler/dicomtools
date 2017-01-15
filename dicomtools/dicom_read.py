@@ -5,7 +5,7 @@ import warnings
 #
 from .series import DicomSeries
 #
-def get_all_series_from_dicomdir(dicomdir_file):
+def _get_all_series_from_dicomdir(dicomdir_file):
 	r'''
 	For a given 'DICOMDIR' file, loop through all of the linked patients and
 	studies, and return a list of all the series.
@@ -44,7 +44,7 @@ def read_dicomdir(dicomdir_file):
 	Build a list of DicomSeries objects, one for each series in the 'DICOMDIR' file.
 	'''
 	#
-	series_list = get_all_series_from_dicomdir(dicomdir_file)
+	series_list = _get_all_series_from_dicomdir(dicomdir_file)
 	# this is a list of series, each series containing the paths to dicom files within that series
 	loaded_series_list = [[dicom.read_file(x) for x in y] for y in series_list]
 	# this is a list of series, each series containing the loaded dicom files within that series

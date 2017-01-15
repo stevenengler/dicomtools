@@ -5,3 +5,5 @@ on the pydicom package.
 It's designed primarily for research use.
 This code is still very basic and the package structure will likely change.
 It tries to somewhat follow the DICOM standard, or to at least avoid vendor-specific attributes.
+
+See the documentation for examples: https://dicomtools.readthedocs.io/en/latest/

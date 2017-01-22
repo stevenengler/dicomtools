@@ -174,13 +174,13 @@ class TestCoordinates(unittest.TestCase):
 			result = dicomtools.coordinates.build_patient_to_physical_matrix(patient_positions[x])
 			np.testing.assert_allclose(result, correct_results[x])
 		#
-		def test_build_pat_2_physical_matrix_invalid_positions(self):
-			patient_positions = ['HFDR', 'HFDL', 'FFDR', 'FFDL']
-			# these positions have not yet been programmed
-			#
-			for patient_position in patient_positions:
-				self.assertRaises(ValueError, dicomtools.coordinates.build_patient_to_physical_matrix(patient_positions))
-			#
+	#
+	def test_build_pat_2_physical_matrix_invalid_positions(self):
+		patient_positions = ['HFDR', 'HFDL', 'FFDR', 'FFDL']
+		# these positions have not yet been programmed
+		#
+		for patient_position in patient_positions:
+			self.assertRaises(ValueError, dicomtools.coordinates.build_patient_to_physical_matrix, patient_position)
 		#
 	#
 #

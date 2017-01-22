@@ -159,6 +159,8 @@ def expand_transformation_dimension(transformation, new_size, move_translation):
 		       [0 0 0 0 0 1]])
 	'''
 	#
+	transformation = np.asarray(transformation)
+	#
 	if transformation.shape[0] != transformation.shape[1]:
 		raise Exception('Transformation must be an nxn array.')
 	if transformation.shape[0] > new_size:
@@ -192,6 +194,7 @@ def transform_vectors(transformation_matrix, vectors):
 	single vector was given and a one-dimensional vector will be returned.
 	'''
 	#
+	transformation_matrix = np.asarray(transformation_matrix)
 	vectors = np.array(vectors)
 	input1D = False
 	if vectors.ndim == 1:

@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/stevenengler/dicomtools.svg?branch=master)](https://travis-ci.org/stevenengler/dicomtools)
 [![codecov](https://codecov.io/gh/stevenengler/dicomtools/branch/master/graph/badge.svg)](https://codecov.io/gh/stevenengler/dicomtools)
+[![Documentation Status](https://readthedocs.org/projects/dicomtools/badge/?version=latest)](http://dicomtools.readthedocs.io/en/latest/?badge=latest)
 
 The dicomtools package is designed to simplify many common DICOM processing steps, and is based
 on the pydicom package.

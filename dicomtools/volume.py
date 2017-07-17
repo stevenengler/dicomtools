@@ -229,7 +229,7 @@ def compare_volume_metadata(volume1, volume2):
 	data, but not the actual pixel data. Returns True if equal, otherwise returns False.
 	'''
 	#
-	assert (volume1.info['pixel_data'].shape == volume2.info['pixel_data'].shape).all()
+	assert volume1.info['pixel_data'].shape == volume2.info['pixel_data'].shape
 	#
 	keys = set(list(volume1.info)+list(volume2.info))
 	# get union of keys from both dictionaries
